@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.py">
+        <div>
+            <label for="name">Name :</label>
+            <input id="name" type="text" placeholder="Enter Your Name">
+        </div>
+
+        <div>
+            <label for="Phone">Number :</label>
+            <input id="Phone" type="tel" placeholder="Enter Phone Number" required>
+        </div>
+
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Enter Email" required>
+        </div>
+
+        <div>
+            <label for="pass">Password :</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+
+
+        <input type="submit" name="Submit" id="submit">
+    </form>
+</body>
+</html>
