@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8"> <!-- Supports all characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>HTML Form Demo</title>
 </head>
 <body>
-    <h1>Forms in HTML</h1>
-    <form action="/submit.py">
-        <div>
-            <label for="name">Name :</label>
-            <input id="name" type="text" placeholder="Enter Your Name">
-        </div>
 
-        <div>
-            <label for="Phone">Number :</label>
-            <input id="Phone" type="tel" placeholder="Enter Phone Number" required>
-        </div>
+    <!-- Page heading -->
+    <h1>HTML Form – All Important Tags</h1>
+    <p>This page demonstrates most commonly used <strong>HTML form elements</strong> with comments.</p>
 
-        <div>
-            <label for="email">Email :</label>
-            <input type="email" placeholder="Enter Email" required>
-        </div>
+    <!-- FORM TAG -->
+    <!-- action: where form data is sent -->
+    <!-- method: how data is sent (GET or POST) -->
+    <form action="submit.php" method="post">
 
-        <div>
-            <label for="pass">Password :</label>
-            <input type="password" placeholder="Password" required>
-        </div>
+        <!-- FIELDSET groups related elements -->
+        <fieldset>
+            <legend>Personal Information</legend>
 
+            <!-- LABEL connects text with input -->
+            <label for="Username">Username:</label><br>
+            <input type="text" id="Username" name="Username" placeholder="Enter Username" required>
+            <br><br>
 
-        <input type="submit" name="Submit" id="submit">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="6">
+            <br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="100">
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="9876543210">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <br><br>
+
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <!-- RADIO buttons (only one selection allowed) -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <!-- CHECKBOX allows multiple selection -->
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+            <br><br>
+
+            <!-- SELECT dropdown -->
+            <label for="course">Choose a Course:</label><br>
+            <select id="course" name="course">
+                <option value="">--Select--</option>
+                <option value="web">Web Development</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+            <br><br>
+
+            <!-- TEXTAREA for long text -->
+            <label for="message">About Yourself:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Write something..."></textarea>
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Uploads & Controls</legend>
+
+            <!-- FILE upload -->
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume">
+            <br><br>
+
+            <!-- RANGE slider -->
+            <label for="rating">Skill Rating:</label><br>
+            <input type="range" id="rating" name="rating" min="0" max="10">
+            <br><br>
+
+            <!-- COLOR picker -->
+            <label for="color">Favorite Color:</label><br>
+            <input type="color" id="color" name="color">
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- BUTTONS -->
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+
     </form>
+
+    <!-- Footer section -->
+    <footer>
+        <p>End of HTML Form Example</p>
+    </footer>
+
 </body>
 </html>
