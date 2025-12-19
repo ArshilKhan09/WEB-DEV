@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 3</title>
+</head>
+<body>
+    <header>
+        <h1>Travel Website</h1>
+    </header>
+
+    <main>
+        <div>
+            <form action="submit.php">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <div>
+                    Enter Name :
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div><br>
+
+                <div>
+                    Enter Phone :
+                    <input type="tel" placeholder="0987654321" required>
+                </div><br>
+
+                <div>
+                    Enter e-mail:
+                    <input type="email" placeholder="xyz@gmail.com" required>
+                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Travel Info</legend>
+                <div>
+                   Choose Departure From :
+                    <select id="Departure">
+                        <option value="">--Select--</option>
+                        <option value="">MUMBAI</option>
+                        <option value="">AJMER</option>
+                        <option value="">DELHI</option>
+                        <option value="">NASHIK</option>
+                        <option value="">GOA</option>
+                        <option value="">SHIMLA</option>
+                    </select>
+                </div><br>
+
+                <div>
+                   Choose Destination:
+                    <select id="Destination">
+                        <option value="">--Select--</option>
+                        <option value="">MUMBAI</option>
+                        <option value="">AJMER</option>
+                        <option value="">DELHI</option>
+                        <option value="">NASHIK</option>
+                        <option value="">GOA</option>
+                        <option value="">SHIMLA</option>
+                    </select>
+                </div><br>
+
+                <div>
+                <label>Trip:</label>
+                <input type="radio" id="oneway" name="trip"  value="oneway">
+                <label for="oneway">Oneway</label>
+
+                <input type="radio" id="round" name="trip" value="round">
+                <label for="round">Round</label>
+                </div><br>
+
+                <div>
+                    <label for="std">Start Date:</label>
+                    <input type="date" id="std" name="std">
+                </div><br>
+
+                <div>
+                    <label for="Sttime">Time:</label>
+                    <input type="time" id="Sttime" name="Sttime">
+                </div><br>
+
+                <div>
+                    <label for="rtd">Return Date:</label>
+                    <input type="date" id="rtd" name="rtd">
+                </div><br>
+
+                <div>
+                    <label for="Rttime">Time:</label>
+                    <input type="time" id="Rttime" name="Rttime">
+                </div><br>
+
+                <label for="seat">Seats:</label>
+                <input type="number" id="seat" name="seat" min="1" max="20">
+                <br><br>
+                
+                <label>Transport Mode:</label>
+                <input type="radio" id="taxi" name="Tmode"  value="taxi">
+                <label for="taxi">Taxi</label>
+
+                <input type="radio" id="Bus" name="Tmode"  value="Bus">
+                <label for="Bus">Bus</label>
+
+                <input type="radio" id="train" name="Tmode"  value="train">
+                <label for="train">Train</label>
+
+                <input type="radio" id="plane" name="Tmode"  value="plane">
+                <label for="plane">Plane</label><br>
+
+
+
+            </fieldset><br>
+
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <footer>
+        All Copyrights are reserved @Travel Website
+    </footer>
+</body>
+</html>
