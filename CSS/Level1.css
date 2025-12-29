@@ -1,5 +1,7 @@
 h1 {
-    color: rgb(1, 65, 65);
+    color: rgb(1, 29, 29);
+    background-color: #0e8880;
+
 }
 
 p {
@@ -7,10 +9,14 @@ p {
 }
 
 body {
-    background-color: rgb(163, 193, 248);
+    background-color: rgb(3, 31, 43);
 }
 
 button {
     color: rgb(19, 4, 83);
     background-color: aquamarine;
+}
+
+footer {
+    background-color: #0e8880;
 }
